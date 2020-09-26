@@ -45,6 +45,6 @@ public class AwsLambdaApplicationTests {
 
         assertThat(response.getStatusCode(), equalTo(200));
         GreetingDto responseBody = mapper.readValue(response.getBody(), GreetingDto.class);
-        assertThat(responseBody.getMessage(), equalTo("Hello John"));
+        assertThat(responseBody.getMessage(), equalTo("Hello Sasi"));
     }
 }
